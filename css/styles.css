@@ -21,6 +21,16 @@ body {
 	color: var(--main-txt-cl);
 	background-color: var(--lighe-txt-cl);
 	}
+	.container {
+		width: 1470;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 15px;
+		padding-right: 15px;
+
+		outline: 2px solid red;
+		outline-offset: -2px;
+	}
 
 .logo {
 	font-family: var(--seconary-font);
@@ -43,6 +53,21 @@ body {
 }
 
 /* reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+ul,
+ol{
+	margin: 0;
+	padding: 0;
+}
 .link {
     text-decoration: none;
 }
@@ -54,6 +79,8 @@ body {
 /* header */
 
 .header {
+	padding-top: 24px;
+	padding-bottom: 24px;
 }
 .header-nav {
 }
@@ -102,7 +129,12 @@ body {
 /* main */
 
 .background {
+	
     background-color: var(--background-cl);
+}
+.main {
+	padding-top: 188px;
+	padding-bottom: 292px;
 }
 .main-title {
 font-size: 56px;
@@ -126,6 +158,10 @@ color: var(--lighe-txt-cl);
 .main-btn:focus{
 	color: var(--lighe-txt-cl);
 	background-color: var(--accent-txt-cl)
+}
+.main-sabject-bloc{
+	padding-top: 120px;
+	padding-bottom: 60px;	
 }
 .main-sabject {
 }
@@ -159,7 +195,14 @@ text-transform: capitalize;
 color: var(--background-cl);
     
 }
+.main-img-bloc{
+	padding-top: 60px;
+	padding-bottom: 60px;	
+}
 .main-img {
+}
+.main-team-bloc{
+	padding-top: 60px;
 }
 .main-team {
 	background-color: var(--lighe-txt-cl)
@@ -185,7 +228,10 @@ color: var(--main-txt-cl);
 
 /* footer */
 
-
+.footer-bloc{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
 .footer-txt {
 color: var(--color-cloud) ;
 }
