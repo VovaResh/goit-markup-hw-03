@@ -9,7 +9,12 @@
 --background-cl: #2E2F42;
 --normal-txt-cl: #4D5AE5;
 --color-cloud: #F4F4FD;
+    /* table */
+ --items: 3;
+ --indent-vertical: 24px;
+ --indent-horizontal: var(--indent-vertical);
 }
+   
 
 
 /* Base styles */
@@ -22,7 +27,7 @@ body {
 	background-color: var(--lighe-txt-cl);
 	}
 	.container {
-		width: 1470;
+		width: 1158px;
 		margin-left: auto;
 		margin-right: auto;
 		padding-left: 15px;
@@ -62,7 +67,9 @@ h6,
 p {
 	margin: 0;
 }
-
+img {
+	display: block;
+}
 ul,
 ol{
 	margin: 0;
@@ -74,7 +81,15 @@ ol{
 .list {
     list-style: none;
 }
-
+.card-set{
+display: flex;
+flex-wrap: wrap;
+row-gap: var(--indent-horizontalt);
+column-gap: var(--indent-vertical);
+}
+.card-set-item {
+flex-basis: calc((100% - var(--indent-vertical) * (var(--items) - 1)) / var(--items));
+}
 
 /* header */
 
@@ -84,6 +99,7 @@ ol{
 }
 .header-container{
 	display: flex;
+	justify-content: space-between;
 }
 .header-nav {
 	display: flex;
@@ -97,6 +113,8 @@ ol{
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: var(--normal-txt-cl);
+
+	margin-right: 76px;
 }
 .header-logo:hover,
 .header-logo:focus {
@@ -104,6 +122,7 @@ ol{
 }
 .header-list {
 	display: flex;
+	gap: 40px;
 }
 .header-item{
 	font-weight: 500;
@@ -121,6 +140,7 @@ ol{
 }
 .header-contakt-list{
 	display: flex;
+	gap: 40px;
 }
 .header-contakt{
 	font-size: 16px;
@@ -174,11 +194,17 @@ color: var(--lighe-txt-cl);
 }
 .main-list {
 	background-color: var(--lighe-txt-cl);
+	display: flex;
+	justify-content: space-between;
+}
+.main-list-bloc {
+	--items: 4;
 }
 .main-item {
 font-size: 56px;
 line-height: 1.07;
 letter-spacing: 0.02em;
+width: 264px;
 }
 .main-subtitle {
 font-weight: 500;
@@ -186,6 +212,7 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: var(--background-cl);
+margin-bottom: 8px;
 }
 .main-text {
 font-size: 16px;
@@ -200,6 +227,7 @@ text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 color: var(--background-cl);
+margin-bottom: 72px;
     
 }
 .main-img-bloc{
@@ -210,11 +238,16 @@ color: var(--background-cl);
 }
 .main-team-bloc{
 	padding-top: 60px;
+	margin-bottom: 120px;
+}
+.team-list {
+	--items: 4;
 }
 .main-team {
 	background-color: var(--lighe-txt-cl)
 }
 .main-team-img {
+	margin-bottom: 32px;
 }
 .main-team-name {
 font-weight: 500;
@@ -223,6 +256,7 @@ line-height: 1.2;
 text-align: center;
 letter-spacing: 0.02em;
 color: var(--background-cl);
+margin-bottom: 8px;
 
 }
 .main-team-profession {
@@ -251,6 +285,10 @@ color: var(--color-cloud) ;
 	line-height: 1.2;
 	letter-spacing: 0.02em;
 	color: var(--background-cl);
+}
+.portfolio-tab {
+	--indent-vertical: 24px;
+	--indent-horizontalt: 48px;
 }
 
 .portfolio-p {
