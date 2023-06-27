@@ -69,6 +69,8 @@ p {
 }
 img {
 	display: block;
+	max-width: 100%;
+	height: auto;
 }
 .visually-hidden {
 	position: absolute;
@@ -134,7 +136,7 @@ flex-basis: calc((100% - var(--indent-vertical) * (var(--items) - 1)) / var(--it
 }
 .header-list {
 	display: flex;
-	/* gap: 40px; */
+	gap: 40px;
 	padding-top: 24px;
 	padding-bottom: 24px;
 }
@@ -155,6 +157,8 @@ flex-basis: calc((100% - var(--indent-vertical) * (var(--items) - 1)) / var(--it
 .header-contakt-list{
 	display: flex;
 	gap: 40px;
+	padding-top: 24px;
+	padding-bottom: 24px;
 }
 .header-contakt{
 	font-size: 16px;
