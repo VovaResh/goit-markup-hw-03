@@ -121,6 +121,8 @@ flex-basis: calc((100% - var(--indent-vertical) * (var(--items) - 1)) / var(--it
 .header-nav {
 	display: flex;
 	align-items: center;
+	padding-top: 24px;
+	padding-bottom: 24px;
 }
 .header-logo {
 	font-family: var(--seconary-font);
@@ -130,10 +132,8 @@ flex-basis: calc((100% - var(--indent-vertical) * (var(--items) - 1)) / var(--it
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: var(--normal-txt-cl);
-
 	margin-right: 76px;
-	padding-top: 24px;
-	padding-bottom: 24px;
+	
 }
 .header-logo:hover,
 .header-logo:focus {
@@ -142,8 +142,8 @@ flex-basis: calc((100% - var(--indent-vertical) * (var(--items) - 1)) / var(--it
 .header-list {
 	display: flex;
 	gap: 40px;
-	padding-top: 24px;
-	padding-bottom: 24px;
+	/* padding-top: 24px;
+	padding-bottom: 24px; */
 }
 .header-item{
 	font-weight: 500;
