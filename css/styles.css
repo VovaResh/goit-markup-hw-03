@@ -132,7 +132,8 @@ flex-basis: calc((100% - var(--indent-vertical) * (var(--items) - 1)) / var(--it
 	color: var(--normal-txt-cl);
 
 	margin-right: 76px;
-	padding: 24px 0;
+	padding-top: 24px;
+	padding-bottom: 24px;
 }
 .header-logo:hover,
 .header-logo:focus {
@@ -141,7 +142,8 @@ flex-basis: calc((100% - var(--indent-vertical) * (var(--items) - 1)) / var(--it
 .header-list {
 	display: flex;
 	gap: 40px;
-	padding: 24px 0;
+	padding-top: 24px;
+	padding-bottom: 24px;
 }
 .header-item{
 	font-weight: 500;
@@ -276,7 +278,7 @@ margin-bottom: 72px;
 	padding-bottom: 120px;	
 }
 .main-img {
-	width: calc((100% - 72px) / 4); 
+	
 }
 .main-team-bloc{
 	padding-top: 120px;
