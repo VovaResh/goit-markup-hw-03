@@ -141,6 +141,8 @@ flex-basis: calc((100% - var(--indent-vertical) * (var(--items) - 1)) / var(--it
 .header-list {
 	display: flex;
 	gap: 40px;
+	padding-top: 24px;
+	padding-bottom: 24px;
 }
 .header-item{
 	font-weight: 500;
@@ -159,6 +161,8 @@ flex-basis: calc((100% - var(--indent-vertical) * (var(--items) - 1)) / var(--it
 .header-contakt-list{
 	display: flex;
 	gap: 40px;
+	padding-top: 24px;
+	padding-bottom: 24px;
 }
 .header-contakt{
 	font-size: 16px;
