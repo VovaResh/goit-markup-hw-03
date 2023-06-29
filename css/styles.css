@@ -122,10 +122,6 @@ flex-basis: calc((100% - var(--indent-vertical) * (var(--items) - 1)) / var(--it
 	display: flex;
 	align-items: center;
 }
-.heder-pading{
-	padding-top: 24px;
-	padding-bottom: 24px;
-}
 .header-logo {
 	font-family: var(--seconary-font);
 	font-weight: 800;
@@ -135,6 +131,8 @@ flex-basis: calc((100% - var(--indent-vertical) * (var(--items) - 1)) / var(--it
 	text-transform: uppercase;
 	color: var(--normal-txt-cl);
 	margin-right: 76px;
+	padding-top: 24px;
+	padding-bottom: 24px;
 }
 .header-logo:hover,
 .header-logo:focus {
