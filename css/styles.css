@@ -141,8 +141,6 @@ flex-basis: calc((100% - var(--indent-vertical) * (var(--items) - 1)) / var(--it
 .header-list {
 	display: flex;
 	gap: 40px;
-	padding-top: 24px;
-	padding-bottom: 24px;
 }
 .header-item{
 	font-weight: 500;
@@ -150,6 +148,8 @@ flex-basis: calc((100% - var(--indent-vertical) * (var(--items) - 1)) / var(--it
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: var(--background-cl);
+	padding-top: 24px;
+	padding-bottom: 24px;
 }
 .header-item:hover,
 .header-item:focus {
@@ -161,14 +161,14 @@ flex-basis: calc((100% - var(--indent-vertical) * (var(--items) - 1)) / var(--it
 .header-contakt-list{
 	display: flex;
 	gap: 40px;
-	padding-top: 24px;
-	padding-bottom: 24px;
-}
+	}
 .header-contakt{
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: var(--main-txt-cl);
+	padding-top: 24px;
+	padding-bottom: 24px;
 }
 .header-contakt:hover,
 .header-contakt:focus {
